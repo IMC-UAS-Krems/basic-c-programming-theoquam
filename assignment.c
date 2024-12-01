@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
 
     for (int i = 0; i < nrows; i++) {
         for (int j = 0; j < ncols; j++) {
-            matrix[i][j] = rand() % (maxrand - minrand + 1) + minrand;
+            matrix[i][j] = rand() % maxrand + minrand;
         }
     }
 // The program will create a file called matrix.txt that contains the previously generated matrix with one row on each line, and using a whitespace separator between each entry. No whitespace should be appended at the end of each line. The last row should end with a carriage return.
